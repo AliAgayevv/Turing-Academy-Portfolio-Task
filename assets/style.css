@@ -1,0 +1,225 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: rgb(13, 18, 31);
+    font-family: "Inter", sans-serif;
+}
+
+.container
+{
+    display: flex;
+}
+
+.left-side
+{
+    width: 355px;
+    height: 100vh;
+    position: fixed;
+    background-color: transparent;
+    color: white;
+    margin: 80px 0 0px 190px;
+}
+
+#left-side_texts-section
+{
+    display: flex;
+    flex-direction: column;
+    color: white;    
+}
+
+#left-side_texts-section > h1
+{
+    font-size: 56px;
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+
+#left-side_texts-section > h3
+{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+#left-side_texts-section > p
+{
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+    margin-bottom: 80px;
+}
+
+#left-side_buttons-section
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#left-side_buttons-section > button
+{
+    background-color: transparent;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    text-align: left;
+    margin-left: 45px; 
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+#left-side_buttons-section > button:hover 
+{
+    transform: translateX(40px);
+    cursor: pointer;
+}
+
+#left-side_buttons-section > button::before
+{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+    left: 0px;
+    background-color: rgb(33, 41, 57);
+}
+
+
+#left-side_buttons-section > button:hover::before
+{
+    width: 70px;
+    background-color: white;
+    left: -84px;
+}
+
+#left-side_socials-section
+{
+    display: flex;
+    margin-top: 250px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#left-side_socials-section > a 
+{
+    border: none;
+    background-color: transparent;
+    color: rgba(256, 256, 256, .6);
+    font-size: 24px;
+    transition: .5s ease-in-out;
+}
+
+#left-side_socials-section > a:hover
+{
+    color: rgb(256, 256, 256);
+    cursor: pointer;
+}
+
+.right-side
+{
+    margin-top: 100px;
+    margin-left: 700px;
+    width: 520px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#right-side_description-text
+{
+    font-size: 16px;
+    color: rgb(148 163 184);
+    letter-spacing: 1px;
+    margin-bottom: 80px;
+
+ } 
+
+/* #cards-groups
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-date
+{
+}
+
+.card
+{
+    text-overflow: hidden;
+    width: 700px;
+    height: 200px;
+    background-color: red;
+}
+
+.card-info
+{
+}
+
+.card-badges-groups
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 10px;
+} */ */
+
+.cards-group {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    align-items: flex-start; /* Tarih ve kartı hizalamak için */
+    gap: 20px; /* Kart ve tarih arasında boşluk */
+    transition: .5s;
+  }
+
+  .date {
+    color: #7D8CA2;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .position h2 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: white;
+  }
+  
+  .position p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #AAB4C5;
+  }
+  
+  .skills {
+    margin-top: 15px;
+  }
+  
+  .skill {
+    display: inline-block;
+    background-color: #2A3A52;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 8px;
+    font-size: 12px;
+    color: #76D7C4;
+  }
+  
